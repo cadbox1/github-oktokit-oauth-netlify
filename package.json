@@ -1,0 +1,43 @@
+{
+	"name": "notes",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@octokit/rest": "^17.1.4",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"react-scripts": "3.4.1",
+		"simple-oauth2": "^3.4.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build:app": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"start:lambda": "netlify-lambda serve src/backend",
+		"build:lambda": "netlify-lambda build src/backend",
+		"build": "run-p build:**"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/jest": "^25.2.1",
+		"@types/node": "^13.11.0",
+		"@types/react": "^16.9.32",
+		"@types/react-dom": "^16.9.6",
+		"netlify-lambda": "^1.6.3",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.0.4",
+		"typescript": "^3.8.3"
+	}
+}
